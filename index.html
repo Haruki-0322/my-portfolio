@@ -4,12 +4,98 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" id="favicon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    
     <title>My Portfolio</title>
+
   </head>
   <body>
-    <h1>ポートフォリオサイト</h1>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark mt-0 mb-0 sticky-top">
+        <a class="navbar-brand" href="#">MyPortfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#history">経歴</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#hobby">趣味</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#link">リンク</a>
+                </li>
+            </ul>
+        </div>
+      </nav>    
+      <img src="img/akira.jpg" alt="akira" class="akira">
+    </header>
+
+    <div class="main">
+
+      <div class="history" id="history">
+        <div class="upper-history">
+          <h1 class="sub-title">---経歴---</h1>
+        </div>
+        <div class="bottom-history">
+          <ul class="list">
+            <li>2002年:3月22日、東京にて生まれる。</li>
+            <li>2014年:中学受験するも失敗。地元の中学校に進学する。</li>
+            <li>2019年:自転車のブレーキが効かず車と衝突事故。けがは無し。</li>
+            <li>2020年:青山学院大学に入学。そして今に至る。</li>
+          </ul>
+        </div>
+      </div>
+
+      
+      <div class="hobby" id="hobby">
+
+        <div class="upper-hobby">
+          <h1 class="sub-title">---趣味---</h1>
+        </div>
+
+        <div class="bottom-hobby">
+
+          <div class="left-hobby">
+            <h2>Netflix</h2>
+            <img src="img/netflix.JPG" alt="ブレイキングバッド" class="hobbyImage1">
+            <p>アニメと海外ドラマをよく見る。その中でも特におすすめなのが「ブレイキングバッド」という作品。高校の理科の教師であるウォルターとその生徒であるジェシーが力を合わせて麻薬（クリスタルメス）を作り、お金を稼ごうとする物語である。</p>
+          </div>
+
+          <div class="right-hobby">
+            <h2 id="before">バイク(before)</h2>
+            <img src="img/before_bike.jpg" alt="バイク" class="hobbyImage2" id="bike"/>
+            <p>二輪の中型免許はつい先月に取ったのだが、このバイクはそれより何ヵ月も前に購入したものである。早く乗りたい気持ちが強かったからである。さらに、免許を取る前にスプレーで色をも塗ってしまった。(画像をホバーして)</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="link" id="link">
+        <h1 class="sub-title">---各種リンク---</h1>
+        <div class="aogaku">
+          <h2>↓ 青山学院大学HP ↓</h2>
+          <a href="https://www.aoyama.ac.jp/" id="aogaku" onclick="clickEvent()">https://www.aoyama.ac.jp/</a>
+        </div>
+        <div class="insta">
+          <h3>↓ インスタグラム ↓</h3>
+          <a href="https://www.instagram.com/harukiii0322" id="insta" onclick="clickEvent()">https://www.instagram.com/harukiii0322</a>
+        </div>
+      </div>
+    </div>
     <script src="main.js"></script>
+    <footer>
+      <p>© HarukiMotohashi. 2022.</p>
+    </footer>
+
   </body>
 </html>

@@ -1,0 +1,128 @@
+html { scroll-behavior: smooth;}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'RocknRoll One', sans-serif;
+}
+header {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+li {
+    font-size: 23px;
+}
+
+.upper-history h1 {
+    font-size: 50px;
+}
+
+.list {
+    text-align: left;
+    display: inline-block;
+    list-style:none;
+}
+
+
+.main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.akira {
+    width: 100%;
+    margin-bottom: 0px;
+    vertical-align: bottom;
+}
+
+.hobbyImage1, .hobbyImage2 {
+    width: 70%;
+    border-radius: 10px;
+}
+
+p {
+    padding: 15px;
+}
+
+.sub-title {
+    margin: 10px;
+    padding: 10px;
+    font-size: 50px;
+}
+
+.bottom-hobby {
+    display: flex;
+}
+
+footer {
+    color: rgb(118, 128, 137);
+    height: 50px;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(56, 66, 76);
+    font-size: 12px;
+}
+
+
+.history {
+    background-color: rgb(149, 146, 164);
+    margin: 0px;
+    padding-bottom: 70px;
+    position: relative;
+}
+.hobby {
+    background-color: rgb(107, 140, 140);
+    margin: 0px;
+    padding-bottom: 50px;
+    position: relative;
+}
+.link {
+  background-color: rgb(184, 155, 156);
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+
+.history::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 0px;
+    border-top: 30px solid transparent; 
+    border-left: 50vw solid transparent; 
+    border-right: 50vw solid rgb(107, 140, 140); 
+    border-bottom: 30px solid rgb(107, 140, 140); 
+}
+
+.hobby::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 0px;
+    border-top: 30px solid transparent; 
+    border-left: 50vw solid rgb(184, 155, 156); 
+    border-right: 50vw solid transparent; 
+    border-bottom: 30px solid rgb(184, 155, 156); 
+}
+
+
+.link {
+    /* margin: 40px; */
+    padding-bottom: 20px;
+}
+
+.aogaku {
+    margin: 20px;
+    padding-bottom: 10px;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
